@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames_DV | Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="bg-animation"></canvas>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>FRAMES_DV</h1>
+            <p class="tagline">CINEMATOGRAPHY • PHOTOGRAPHY</p>
+            <div class="about-content">
+                <p>Visual artist based in Maharashtra. Specializing in cinematic storytelling and product photography. Blending technical precision with creative vision to capture moments that matter.</p>
+            </div>
+            <a href="#gallery" class="btn-reveal">VIEW WORK</a>
+        </div>
+    </header>
+
+    <section id="gallery" class="gallery-container">
+        <h2 class="section-title">WORK</h2>
+        
+        <div class="portfolio-grid">
+            <div class="grid-item" data-src="images/boy3.jpg" data-caption="Cinematic Portrait">
+                <img src="images/boy3.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item" data-src="images/bike.jpg" data-caption="Motion Blur - Royal Enfield">
+                <img src="images/bike.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            
+            <div class="grid-item" data-src="images/flower.jpg" data-caption="Motion Blur - Royal Enfield">
+                <img src="images/flower.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            
+            <div class="grid-item" data-src="images/duck3.jpg" data-caption="Motion Blur - Royal Enfield">
+                <img src="images/duck3.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item" data-src="images/wildstone.jpg" data-caption="Wild Stone Product Shot">
+                <img src="images/wildstone.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item" data-src="images/duck.jpg" data-caption="Golden Hour Nature">
+                <img src="images/duck.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/temple.jpg" data-caption="Architecture Study">
+                <img src="images/temple.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/squirrel.jpg" data-caption="Wildlife Moment">
+                <img src="images/squirrel.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/duck2.jpg" data-caption="Nature Detail">
+                <img src="images/duck2.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/boy.jpg" data-caption="Urban Lifestyle">
+                <img src="images/boy.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/boy1.jpg" data-caption="Portrait Study">
+                <img src="images/boy1.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/boy2.jpg" data-caption="Portrait Study">
+                <img src="images/boy2.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+
+            <div class="grid-item is-hidden" data-src="images/lights.jpg" data-caption="Industrial Minimalism">
+                <img src="images/lights.jpg" alt="Photography">
+                <div class="img-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+        </div>
+
+        <div class="action-container">
+            <button id="show-all-btn" class="btn-reveal">SHOW ALL</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/frames_dv/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto: dvframess@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> FRAMES_DV. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
